@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Here App</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    #map{
+        height: 40em;
+    }
+</style>
+<body>
+    <div id="main">
+
+   
+            <h1>Weather Here 🌤️</h1>
+
+            <p>Latitude: °<span id="lat"></span></p>
+            <p>Longitude: °<span id="lon"></span></p>
+
+            <div id="links">
+                <a href="./logs/index.html">View logs</a> | 
+                <a href="./mapping/index.html">View Map</a>
+            </div>
+
+            <br>
+            <br>
+            <button id="geolocate">Locate</button>
+
+            <div id="weather-report">
+                <h4>Weather Report:</h4>
+                <p>Timezone: <span id="timezone"></span></p>
+                <p>Temperature: <span id="temp"></span></p>
+                <p>Maximum Temperature: <span id="max-temp"></span></p>
+                <p>Minimum Temperature: <span id="min-temp"></span></p>
+                <p>Feels like: <span id="feel-temp"></span></p>
+            </div>
+
+            <div id="aq">
+                <h4>Air Quality Index</h4>
+                <p>Quality: <span id="quality"></span></p>
+                <p>PM(10): <span id="pm-10"></span></p>
+            </div>
+
+    </div>
+    <!-- <div id="map"></div> -->
+</body>
+<script src="index.js"></script>
+</html>

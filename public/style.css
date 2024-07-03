@@ -1,0 +1,150 @@
+html{
+    background-color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body{ */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    /* margin: 0 auto; */
+/* } */
+
+#logs-main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    background-color: antiquewhite;
+    font-size: larger;
+    font-weight: 500;
+    width: max-content;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
+    background-color: antiquewhite;
+    font-size: larger;
+    font-weight: 500;
+    width: max-content;
+}
+
+#root{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+    border: 2px solid;
+    margin-bottom: 5px;
+    background-color: antiquewhite;
+    font-size: larger;
+    font-weight: 500;
+    width: max-content;
+}
+
+#map{
+    padding: none;
+    margin: none;
+    height: 500px;
+    width: 100%;
+}
+
+
+/* div {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    padding: 20px;
+    background-color: antiquewhite;
+    font-size: larger;
+    font-weight: 500;
+    width: max-content;
+} */
+
+
+
+#weather-report{
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+}
+
+#aq{
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+    
+}
+
+#links{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    gap:20px;
+    justify-content: center;
+    padding-bottom: 3px;
+    /* padding-right: 2px; */
+    color: black;
+}
+
+#links a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#links a:hover{
+    text-decoration: underline;
+}
+
+#map-heading{
+    color: black;
+}
+
+#map-div{
+    display: flex;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#geolocate{
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  width: 150px;
+}
+
+#geolocate:hover {
+  opacity: 0.75;
+}
+
